@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Machine Learning Model
+description: Deep learning project for image classification
+img: assets/img/4.jpg
+importance: 1
+category: robotics & ml
 ---
 
 Every project has a beautiful feature showcase page.

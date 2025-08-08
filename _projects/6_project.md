@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Computer Vision Research
+description: Advanced computer vision and AI algorithms
+img: assets/img/8.jpg
+importance: 3
+category: robotics & ml
 ---
 
 Every project has a beautiful feature showcase page.

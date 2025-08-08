@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Mobile App Project 1
+description: iOS/Android mobile application with modern UI
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: mobile development
 related_publications: true
 ---
 

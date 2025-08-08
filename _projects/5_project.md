@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
+title: Robotics Control System
+description: Autonomous robot navigation and control
 img: assets/img/1.jpg
-importance: 3
-category: fun
+importance: 2
+category: robotics & ml
 ---
 
 Every project has a beautiful feature showcase page.

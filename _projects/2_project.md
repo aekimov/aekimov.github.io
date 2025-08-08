@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Cross-Platform Mobile App
+description: React Native app with advanced features
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: mobile development
 giscus_comments: true
 ---
 
