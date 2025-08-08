@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Artem Ekimov! I'm a passionate developer specializing in mobile development and exploring the fascinating world of robotics and machine learning. 
+Hi, I'm Artem Ekimov! I'm a passionate developer specializing in mobile development and exploring the fascinating world of robotics and machine learning.
 
 I have experience building modern mobile applications for both iOS and Android platforms, with expertise in React Native, Flutter, and native development. My work focuses on creating intuitive user experiences and implementing cutting-edge features that make a difference in people's daily lives.
 
