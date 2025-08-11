@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -46,51 +46,21 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-mobile-app-project-1",
-          title: 'Mobile App Project 1',
-          description: "iOS/Android mobile application with modern UI",
+          section: "News",},{id: "projects-plainy",
+          title: 'Plainy',
+          description: "Daily planner with AI voice-to-tasks",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-cross-platform-mobile-app",
-          title: 'Cross-Platform Mobile App',
-          description: "React Native app with advanced features",
+            },},{id: "projects-moviesfeed",
+          title: 'MoviesFeed',
+          description: "iOS app demonstrating TDD, clean architecture",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-flutter-mobile-development",
-          title: 'Flutter Mobile Development',
-          description: "Modern Flutter application with beautiful UI",
+            },},{id: "projects-creditcalc",
+          title: 'CreditCalc',
+          description: "Convenient and accurate loan calculator",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-machine-learning-model",
-          title: 'Machine Learning Model',
-          description: "Deep learning project for image classification",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-robotics-control-system",
-          title: 'Robotics Control System',
-          description: "Autonomous robot navigation and control",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-computer-vision-research",
-          title: 'Computer Vision Research',
-          description: "Advanced computer vision and AI algorithms",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
