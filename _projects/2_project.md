@@ -1,81 +1,107 @@
 ---
 layout: page
-title: Cross-Platform Mobile App
-description: React Native app with advanced features
-img: assets/img/3.jpg
+title: MoviesFeed
+description: iOS app demonstrating TDD, clean architecture
+img:
 importance: 2
 category: mobile development
-giscus_comments: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<style>
+  /* Smaller, card-like screenshots */
+  .row.g-spot > .col-sm{
+  display:flex;
+  flex-direction: column;      /* stack image + caption */
+  align-items: center;         /* center them */
+}
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+.appshot { max-width:260px; width:100%; border-radius:28px; box-shadow:0 16px 40px rgba(0,0,0,.05); }
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+.appshot-wide {
+  max-width: 800px; /* or any size that fits your page */
+  width: 100%;
+  border-radius: 12px; /* maybe smaller radius for big diagrams */
+  box-shadow: 0 16px 40px rgba(0,0,0,.05);
+}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+.shot-caption{
+  max-width:260px;             /* keep caption same width as image */
+  margin-top:.5rem;
+  text-align:center;
+  color:#6c757d;
+  font-size:.9rem;
+}
+</style>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+> An iOS application built to demonstrate effective development techniques with a focus on **Test-Driven Development (TDD)**, **Clean Architecture**, **reusability**, and **maintainability**.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+**GitHub repository:** [aekimov/AEFeed](https://github.com/aekimov/AEFeed)
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Overview
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+Showcases:
+
+- Online & offline movie feed support
+- Local caching with timestamp validation
+- Review loading for movies
+- Separation of concerns through Clean Architecture
+- MVP UI pattern with clear loading states
+
+API token from [The Movie Database](https://www.themoviedb.org/documentation/api) is needed to run the app.
+
+---
+
+## Key Features
+
+**1. Always up-to-date online feed**  
+When online, automatically fetch the latest movie feed to ensure a smooth, fresh experience.
+
+**2. Offline-first experience**  
+When offline, load the last saved feed from cache, so you can still browse even without internet.
+
+**3. Movie reviews**  
+Each movie can display a feed of reviews, offering valuable insight before you decide what to watch.
+
+---
+
+<div class="row g-spot section-spacer">
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/mf_1.png" title="Feed View" class="appshot" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/mf_2.png" title="Reviews View" class="appshot" %}
   </div>
 </div>
-```
 
-{% endraw %}
+## Dependency Diagram
+
+<div class="row g-spot section-spacer">
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/diagram.png" title="Dependency diagram" class="appshot-wide" %}
+  </div>
+</div>
+
+---
+
+## MVP UI — Loading State Example
+
+<div class="row g-spot section-spacer">
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/example-mvp.png" title="MVP loading state example" class="appshot-wide" %}
+  </div>
+</div>
+
+---
+
+## Technical Highlights
+
+- **Architecture:** Clean Architecture with clear boundaries
+- **Pattern:** Model-View-Presenter (MVP)
+- **Testing:** Fully TDD-driven with isolated feature tests
+- **Caching:** Local persistence with CoreData for feed and images, with expiry rules
+- **Networking:** URLSession-based HTTP client with dependency injection
+
+---

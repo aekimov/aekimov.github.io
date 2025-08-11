@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mobile Developer & AI Enthusiast. Capturing life through code and photography.
+subtitle: Mobile Developer & Robotics Enthusiast.
 
 profile:
   align: right
@@ -25,11 +25,12 @@ latest_posts:
 ---
 
 Hi, I'm Artem Ekimov! I'm a passionate developer specializing in mobile development and exploring the fascinating world of robotics and machine learning.
+I work across both native and cross-platform technologies, creating smooth user experiences.
 
-I have experience building modern mobile applications for both iOS and Android platforms, with expertise in React Native, Flutter, and native development. My work focuses on creating intuitive user experiences and implementing cutting-edge features that make a difference in people's daily lives.
+I’m also fascinated by robotics and AI, especially projects involving computer vision, autonomous systems, and machine learning.
 
-Beyond mobile development, I'm deeply interested in robotics and AI technologies. I enjoy working on projects that involve computer vision, autonomous systems, and machine learning algorithms. The intersection of these fields excites me, especially when it comes to building intelligent systems that can interact with the real world.
+Outside of work, I’m rarely without a camera. Photography lets me apply the same attention to detail and composition that I value in coding.
 
-When I'm not coding, you'll often find me with a camera in hand, capturing the world through photography. I believe that both programming and photography require a keen eye for detail, composition, and the ability to see beauty in complexity.
+When I’m not behind a screen or a lens, you might find me hiking a trail, bouldering at the climbing gym, or playing a set of tennis.
 
-I'm always open to collaborating on interesting projects and discussing new ideas. Feel free to reach out if you'd like to connect!
+Always happy to talk about new ideas and projects. Feel free to reach out if you'd like to connect!

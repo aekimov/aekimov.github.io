@@ -1,80 +1,65 @@
 ---
 layout: page
-title: Flutter Mobile Development
-description: Modern Flutter application with beautiful UI
-img: assets/img/7.jpg
+title: CreditCalc
+description: Convenient and accurate loan calculator
+img:
 importance: 3
 category: mobile development
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<style>
+  /* Smaller, card-like screenshots */
+  .row.g-spot > .col-sm{
+  display:flex;
+  flex-direction: column;      /* stack image + caption */
+  align-items: center;         /* center them */
+}
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+.appshot { max-width:260px; width:100%; border-radius:28px; box-shadow:0 16px 40px rgba(0,0,0,.05); }
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+.shot-caption{
+  max-width:260px;             /* keep caption same width as image */
+  margin-top:.5rem;
+  text-align:center;
+  color:#6c757d;
+  font-size:.9rem;
+}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+</style>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Overview & tracking
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Track multiple credits, plan advance (extra) repayments, choose how they apply (term or payment reduction), and instantly see the savings and new payoff date. A detailed amortization schedule keeps every payment transparent.
 
-{% raw %}
+Create and manage several loans at once. See next payment, total paid, and remaining balance at a glance.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row g-spot section-spacer">
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/cc_1.png" class="appshot" %}
+    <div class="shot-caption">Credits list — mortgage and car loan with progress</div>
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/cc_2.png" class="appshot" %}
+    <div class="shot-caption">Loan details — rate, totals, schedule & advance payment</div>
   </div>
 </div>
-```
 
-{% endraw %}
+---
+
+## Plan extra repayments & see impact
+
+Add an advance repayment, choose **Term reduction** or **Payment reduction**, and preview exactly how much interest you save and how the payoff date changes.
+
+<div class="row g-spot section-spacer">
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/cc_3.png" class="appshot" %}
+    <div class="shot-caption">Advance payment input — immediate savings preview</div>
+  </div>
+  <div class="col-sm mt-3">
+    {% include figure.liquid path="assets/img/cc_4.png" class="appshot" %}
+    <div class="shot-caption">Full amortization schedule — payment, interest, principal, balance</div>
+  </div>
+</div>
